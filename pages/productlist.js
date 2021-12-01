@@ -2,6 +2,8 @@ import { useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import Link from "next/link";
 import { MdDeleteOutline } from "react-icons/md";
+import Head from "next/head";
+
 import dynamic from "next/dynamic";
 const TopBar = dynamic(() => import("../components/TopBar"));
 const Sidebar = dynamic(() => import("../components/Sidebar"));
@@ -150,6 +152,10 @@ function productlist() {
   ];
   return (
     <div>
+      <Head>
+        <title>Admin Dashboard | Product List</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <TopBar />
       <main className="flex flex-col xl:flex-row">
         <Sidebar />

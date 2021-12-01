@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 import { DataGrid } from "@mui/x-data-grid";
 import dynamic from "next/dynamic";
@@ -225,6 +226,10 @@ function UserList() {
 
   return (
     <div className="w-full">
+      <Head>
+        <title>Admin Dashboard | User List</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <TopBar />
       <main className="flex flex-col xl:flex-row">
         <Sidebar />
