@@ -6,9 +6,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.2",
+    "@mui/x-data-grid": "^5.0.1",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "recharts": "^2.1.6",
+    "recoil": "^0.5.2",
+    "tailwind-scrollbar-hide": "^1.1.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
